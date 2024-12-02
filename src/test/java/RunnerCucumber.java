@@ -6,7 +6,8 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @CucumberOptions(
         plugin = { "summary", "pretty", "html:target/cucumber.html" },
-        // glue = {"/src/test/resources/feature/"},
+        glue = "stepdefinitions",
+        features = "src/test/resources/features",
         tags = "@Smoke",
         snippets = SnippetType.CAMELCASE)
 @RunWith(Cucumber.class)

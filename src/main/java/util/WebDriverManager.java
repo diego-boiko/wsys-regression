@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebDriverManager {
     private static WebDriver driver;
-    private static String url = "http://wsysapptest:5201/auth/login";
+    private static String url = "https://testwsys.chsinc.com/auth/login";
 
     private WebDriverManager() {
     }

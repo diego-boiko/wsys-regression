@@ -1,6 +1,6 @@
 package br.com.chsportalbr.page;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,10 +22,10 @@ public class LoginPage {
     @FindBy(xpath = "//input[@placeholder='Login']")
     private WebElement inputEmail;
 
-    @FindBy(xpath = "//input[@placeholder='Password']")
+    @FindBy(xpath = "//input[@placeholder='Senha']")
     private WebElement inputSenha;
 
-    @FindBy(xpath = "//span[normalize-space()='Sign in']")
+    @FindBy(id = "kt_login_signin_submit")
     private WebElement buttonEntrar;
 
     public LoginPage(WebDriver driver) {
@@ -51,7 +51,7 @@ public class LoginPage {
     public void succesfulLogin() {
 
         inputEmail.sendKeys("dboiko");
-        inputSenha.sendKeys("");
+        inputSenha.sendKeys("Slipknot@#$@@2024");
         buttonEntrar.click();
 
     }

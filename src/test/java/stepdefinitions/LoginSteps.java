@@ -1,4 +1,4 @@
-package stepdefinition;
+package stepdefinitions;
 
 import br.com.chsportalbr.action.*;
 
